@@ -1,49 +1,123 @@
-*{
-    color: white;
-}
-
-h3 {
-    text-align: center;
-    justify-content: center;
-}
-
-h2 {
-    text-align: center;
-    justify-content: center;
-}
-
-p {
-    padding: 100px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+* {
+    box-sizing: border-box;
+    color: #e6e6e6;
 }
 
 body {
-    background-color: green;
+    text-align: center;
+    background: linear-gradient(180deg, #0b1f0b, #071407);
+    font-family: "Courier New", monospace;
+    margin: 0;
+}
+
+h1 {
+    color: #00ff41;
+    font-size: 42px;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px #00ff41;
+}
+
+h2 {
+    color: #5cff5c;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+
+h3 {
+    color: #9aff9a;
+    font-size: 20px;
+}
+
+p {
+    padding: 20px 60px;
+    font-family: "Courier New", monospace;
+    line-height: 1.6;
+    color: #d0ffd0;
+}
+
+.photo-container {
+    max-width: 320px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #021d02;
+    border: 2px solid #00ff41;
+    box-shadow: 0 0 20px rgba(0,255,65,0.4);
+}
+
+.photo-container img {
+    width: 100%;
+    border: 2px solid #00ff41;
+}
+
+.suspect-info {
+    text-align: left;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: rgba(0, 20, 0, 0.6);
+    border-left: 4px solid #00ff41;
+}
+
+.crimes-list {
+    text-align: left;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: rgba(20, 0, 0, 0.6);
+    border-left: 4px solid #ffcc00;
+}
+
+strong {
+    color: #00ff41;
 }
 
 a {
-    text-align: center;
     text-decoration: none;
-    justify-content: center;
-    color: black;
 }
 
 .button-link {
-    justify-content: center;
-    text-align: center;
+    display: inline-block;
     margin: 40px;
-    color:black;
-    background-color: white;
-    padding: 40;
-    margin-right: 45%;
+    color: #00ff41;
+    background-color: transparent;
+    padding: 15px 40px;
+    border: 2px solid #00ff41;
+    letter-spacing: 2px;
+    transition: 0.3s;
 }
 
-.button-link:hover{
+.button-link:hover {
     cursor: pointer;
-    background-color: black;
-    color: white
+    background-color: #00ff41;
+    color: #001a00;
+    box-shadow: 0 0 20px #00ff41;
 }
 
 a:hover {
-    color: white;
+    color: #00ff41;
+}
+
+.footer-note {
+    font-style: italic;
+    color: #00ff41;
+    margin-top: 40px;
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: repeating-linear-gradient(
+        0deg,
+        rgba(0,255,65,0.03),
+        rgba(0,255,65,0.03) 1px,
+        transparent 1px,
+        transparent 2px
+    );
+    pointer-events: none;
 }
