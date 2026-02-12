@@ -1,0 +1,49 @@
+*{
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    justify-content: center;
+}
+
+p {
+    padding: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: green;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    color: black;
+}
+
+.button-link {
+    justify-content: center;
+    text-align: center;
+    margin: 40px;
+    color:black;
+    background-color: white;
+    padding: 40;
+    margin-right: 45%;
+}
+
+.button-link:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white
+}
+
+a:hover {
+    color: white;
+}
